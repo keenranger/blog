@@ -1,6 +1,56 @@
+baseurl: https://keenranger.github.io
+languageCode: ko
+paginate: 5
+title: 마크의 개발 블로그
+
+languages:  
+  ko:
+    languageName: 한국어
+    title: 마크의 개발 블로그
+    weight: 1
+  en:
+    languageName: Enlgish
+    title: Mark's Dev Blog
+    weight: 2
+
+DefaultContentLanguage: ko
+hasCJKLanguage: true
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 MST
+
+    article:
+        math: false
+        toc: true
+        readingTime: true
 module:
   # uncomment line below for temporary local development of module
   # replacements: "github.com/CaiJimmy/hugo-theme-stack/v3 -> ../../hugo-theme-stack"
   imports:
     - path: github.com/CaiJimmy/hugo-theme-stack/v3
       disable: false
+
+
+menu:
+    main: []
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/keenranger
+          params:
+              icon: brand-github
+        - identifier: linkedin
+          name: Linkedin
+          url: https://www.linkedin.com/in/hankyeol-kyung-851282135/
