@@ -34,6 +34,18 @@ params:
         math: false
         toc: true
         readingTime: true
+    sidebar:
+        subtitle:  문제 생길때 마다 끄적이는 블로그입니다...
+    widgets:
+      homepage:
+        - type: categories
+          params:
+            limit: 10
+        - type: tag-cloud
+          params:
+            limit: 10
+      page:
+        - type: toc
 module:
   # uncomment line below for temporary local development of module
   # replacements: "github.com/CaiJimmy/hugo-theme-stack/v3 -> ../../hugo-theme-stack"
